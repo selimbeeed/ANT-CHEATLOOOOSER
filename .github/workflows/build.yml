@@ -11,7 +11,7 @@ jobs:
           distribution: 'temurin'
       - name: Build
         run: |
-          gradle wrapper --gradle-version 8.10
+          gradle wrapper --gradle-version 8.12
           ./gradlew build --no-daemon
       - uses: actions/upload-artifact@v4
         with:
