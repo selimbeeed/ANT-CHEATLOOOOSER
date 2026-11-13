@@ -11,15 +11,16 @@ public class OliviaClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            // L tuşuna basınca menüyü aç
+            // Open menu with 'L' key
             if (client.currentScreen == null && isKeyPressed(GLFW.GLFW_KEY_L)) {
                 client.setScreen(new OliviaMenu());
             }
             
-            // Hile modüllerini tickle
+            // Module ticks
             ElytraAimBot.tick(client);
             OtoMace.tick(client);
             BaseFinder.tick(client);
+            XRay.tick(client); // Added XRay here
         });
     }
 
