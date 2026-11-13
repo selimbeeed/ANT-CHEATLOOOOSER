@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.olivia.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "GrimBypassMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
