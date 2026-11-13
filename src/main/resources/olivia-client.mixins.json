@@ -2,10 +2,16 @@
   "required": true,
   "package": "com.olivia.client.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": [
-    "GrimBypassMixin"
+      "client": [
+    "GrimBypassMixin",
+    "MainMenuMixin",
+    "XRayMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   }
 }
+  
+
+    
+  
