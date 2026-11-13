@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "olivia-client",
+  "version": "${version}",
+  "name": "Olivia Client",
+  "description": "Ozel hile",
+  "authors": ["olivia"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.olivia.client.OliviaClient"]
+  },
+  "mixins": [
+    "olivia-client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.5",
+    "fabric-api": "*"
+  }
+}
