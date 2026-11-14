@@ -7,7 +7,10 @@
   "authors": ["olivia"],
   "environment": "client",
   "entrypoints": {
-    "client": ["com.olivia.client.OliviaClient"]
+    "client": [
+      "com.olivia.client.OliviaClient",
+      "com.olivia.client.ChestESPRenderer"
+    ]
   },
   "mixins": [
     "olivia-client.mixins.json"
